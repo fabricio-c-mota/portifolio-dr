@@ -1,3 +1,4 @@
+/* Reset básico */
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +15,7 @@ body {
   min-height: 100vh;
 }
 
+/* Header */
 header {
   background: #7c0909;
   color: #fff;
@@ -54,8 +56,14 @@ header button {
   background-color: #000000;
   color: white;
   border: none;
+  cursor: pointer;
 }
 
+header button:hover {
+  background-color: #333;
+}
+
+/* Layout principal */
 main {
   display: grid;
   grid-template-columns: 300px 1fr;
@@ -64,6 +72,7 @@ main {
   background: #fff;
 }
 
+/* Sidebar */
 aside {
   background: #1e1e1e;
   color: #fff;
@@ -72,7 +81,7 @@ aside {
 }
 
 aside figure img {
-  width: 150px; 
+  width: 150px; /* ou tamanho desejado */
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
@@ -81,6 +90,7 @@ aside figure img {
 aside figcaption {
   margin-top: 0.5rem;
   font-size: 0.9rem;
+  font-weight: bold;
 }
 
 aside ul {
@@ -101,29 +111,38 @@ aside ul li a {
   width: 100%;
 }
 
+/* Conteúdo principal (Postagens) */
 section article {
+  background: #f9f9f9;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
   margin-bottom: 2rem;
 }
 
-section h2 {
-  margin-bottom: 0.5rem;
-  color: #444;
+section article h3 {
   font-size: 1.3rem;
+  color: #222;
+  margin-bottom: 0.5rem;
 }
 
-section ul li {
-  list-style: disc;
-  margin-left: 1.5rem;
-  margin-bottom: 0.3rem;
+section article small {
+  color: #666;
+  display: block;
+  margin-bottom: 1rem;
 }
 
-address a {
-  display: inline-block;
-  color: #007BFF;
-  text-decoration: none;
-  margin-bottom: 0.3rem;
+section article img {
+  width: 100%;
+  max-height: 500px;      /* Aumentado de 300px para 500px */
+  object-fit: contain;    /* Alterado de cover para contain */
+  margin-bottom: 1.5rem;  /* Mais espaço abaixo */
+  background: #f0f0f0;    /* Fundo mais claro para destacar a imagem */
+  padding: 0.5rem;        /* Pequeno espaço interno para respiro */
+  border: 1px solid #ccc; /* Opcional: borda leve */
 }
 
+/* Rodapé */
 footer {
   background: #222;
   color: #ccc;
@@ -150,6 +169,10 @@ footer {
 
   aside ul li a {
     text-align: center;
+  }
+
+  section article img {
+    max-height: 200px;
   }
 }
 
