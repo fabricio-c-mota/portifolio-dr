@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil de Usuário</title>
+  <link rel="stylesheet" href="../css/forms.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="./sobre.html">Início</a>
+    </nav>
+    <h1>Perfil de Usuário</h1>
+  </header>
+
+  <main>
+    <section class="perfil">
+      <aside>
+        <figure>
+          <img src="../img/EREUdGGWAAAgIUm.jpg" alt="Foto do Usuário">
+          <figcaption>
+            <strong>Dr. Hans Chucrute</strong><br>
+            <small>chucrutehans@gmail.com</small><br>
+            <small>Dr. em Fuleragiologia</small><br>
+            <small>San Francisco, California, Estados Unidos</small>
+          </figcaption>
+        </figure>
+        <ul>
+          <li><img src="../img/local-na-rede-internet.png">www.drhanschucrute.com</li>
+          <li><img src="../img/logotipo-do-linkedin.png">@drhans</li>
+          <li><img src="../img/twitter.png">@hans_chucrute</li>
+          <li><img src="../img/instagram (1).png">@chucrute.dr</li>
+        </ul>
+      </aside>
+
+      <form>
+        <section>
+          <h2>Dados Pessoais</h2>
+          <label>Nome Completo <input type="text" value="Dr. Hans Chucrute"></label>
+          <label>E-mail <input type="email" value="chucrutehans@gmail.com"></label>
+          <label>Telefone <input type="tel" value="(86) 4002-8922"></label>
+          <label>Data de Nascimento <input type="date" value="1970-06-05"></label>
+          <label>Sexo
+            <div class="radio-group">
+              <label><input type="radio" name="sexo" checked> ♂️</label>
+              <label><input type="radio" name="sexo"> ♀️</label>
+            </div>
+
+            <div class="form-group">
+            <label for="biografia">Biografia</label>
+            <textarea id="biografia" name="biografia">Hallo! Eu sou o renomado, brilhante — e modestíssimo — Professor Hans Chucrute, cientista, inventor, pensador, gênio incompreendido e, acima de tudo, humilde. Assinado: Professor Hans Chucrute, PhD, ABC, XYZ e etc.
+            </textarea>
+            </div>
+
+        <section>
+          <h2>Endereço</h2>
+          <label>Rua <input type="text" value="Lombard Street, 1489"></label>
+          <label>Cidade <input type="text" value="San Francisco"></label>
+          <label>Estado <input type="text" value="California"></label>
+        </section>
+
+        <section>
+          <h2>Detalhes de Pagamento</h2>
+          <label>Nome Titular <input type="text" value="Dr. Hans Chucrute"></label>
+          <label>
+            Pagamento
+            <div class="radio-group">
+              <label><input type="radio" name="pagamento" checked> Crédito</label>
+              <label><input type="radio" name="pagamento"> Débito</label>
+            </div>
+          </label>
+          <label>Nº do Cartão <input type="text" value="1234 5678 9101 1121"></label>
+          <label>Data de Expiração <input type="date" value="2030-01-01"></label>
+          <label>CVV <input type="text" value="123"></label>
+        </section>
+
+        <section>
+          <h2>Habilidades</h2>
+          <label>Genética Improvisada<progress value="100" max="100"></progress></label>
+          <label>Gritaria Científica Aplicada<progress value="80" max="100"></progress></label>
+          <label>Invenções Inúteis de Alta Complexidade<progress value="90" max="100"></progress></label>
+          <label>Domínio de Idiomas Inexistentes<progress value="50" max="100"></progress></label>
+          <label>Técnicas de Disfarce Científico<progress value="70" max="100"></progress></label>
+        </section>
+
+        <section>
+          <h2>Interesses</h2>
+          <ul>
+            <li><label><input type="checkbox"> Genética Improvisada</label></li>
+            <li><label><input type="checkbox"> Gritaria Científica Aplicada</label></li>
+            <li><label><input type="checkbox"> Invenções Inúteis de Alta Complexidade</label></li>
+            <li><label><input type="checkbox"> Criação de Ajudantes Falhos</label></li>
+            <li><label><input type="checkbox"> Domínio de Idiomas Inexistentes</label></li>
+            <li><label><input type="checkbox"> Técnicas de Disfarce Científico</label></li>
+            <li><label><input type="checkbox"> Engenharia do Impossível</label></li>
+          </ul>
+        </section>
+
+        <div class="form-actions">
+          <button type="submit">Salvar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Autor: Dr. Hans Chucrute<br>
+    <a href="chucrutehans@gmail.com">chucrutehans@gmail.com</a></p>
+  </footer>
+</body>
+
+</html>
