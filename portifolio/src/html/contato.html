@@ -1,21 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
-</head>
-<body>
-    <link rel="stylesheet" href="../css/index.css">
-    <header> 
-        <h1>Contato</h1>
-        <nav>
-            <a href="index.html"> Início</a>
-            <a href="sobre.html">Sobre</a>
-            <a href="contato.html">Contao</a>
-            <a href="perfil.html">Perfil</a>
-        </nav>
-    </header>
+<html lang="pt-br">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Hans Chucrute | Contatos</title>
+  <link rel="stylesheet" href="../css/sobre.css">
+</head>
+
+<body>
+  <header>
+    <h1>Dr. Hans Chucrute</h1>
+    <nav>
+      <ul>
+        <li><a href="./sobre.html">Início</a></li>
+        <li><a href="./contato.html">Contato</a></li>
+        <li><a href="./forms.html">Perfil</a></li>
+        <li><a href="./perfil.html">Postagens</a></li>
+      </ul>
+      <form>
+        <input type="search" placeholder="Pesquisar...">
+        <button type="submit">Pesquisar</button>
+      </form>
+    </nav>
+  </header>
+
+  <main>
+    <aside>
+      <figure>
+        <img src="../img/EREUdGGWAAAgIUm.jpg" alt="Dr. Hans Chucrute">
+        <figcaption style="font-weight: bold;">Dr. Hans Chucrute</figcaption>
+        <figcaption>Dr. em Fuleragiologia</figcaption>
+      </figure>
+      <ul>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Youtube</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+    </aside>
+
+    <section>
+      <article>
+        <h2>Formulário de Contato</h2>
+        <form>
+          <p>
+            <label for="nome"><strong>Nome:</strong></label><br />
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" style="width: 100%; padding: 0.5rem; margin-top: 0.3rem;" required />
+          </p>
+
+          <p>
+            <label for="email"><strong>E-mail:</strong></label><br />
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" style="width: 100%; padding: 0.5rem; margin-top: 0.3rem;" required />
+          </p>
+
+          <p>
+            <label for="assunto"><strong>Assunto:</strong></label><br />
+            <input type="text" id="assunto" name="assunto" placeholder="Digite o assunto" style="width: 100%; padding: 0.5rem; margin-top: 0.3rem;" />
+          </p>
+
+          <p>
+            <label for="mensagem"><strong>Mensagem:</strong></label><br />
+            <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" rows="5" style="width: 100%; padding: 0.5rem; margin-top: 0.3rem;" required></textarea>
+          </p>
+
+          <p>
+            <button type="submit" style="padding: 0.7rem 1.5rem; background-color: #7c0909; color: white; border: none; font-weight: bold;">Enviar</button>
+          </p>
+        </form>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <small>&copy; 2025 Dr. Chucrute. Todos os direitos reservados.</small>
+  </footer>
 </body>
 </html>

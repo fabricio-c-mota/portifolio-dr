@@ -1,4 +1,3 @@
-/* Reset e base */
 * {
   margin: 0;
   padding: 0;
@@ -98,17 +97,17 @@ textarea {
   }
 
   label {
-    width: 80px;              /* largura fixa para alinhar bem */
+    width: 80px;              
     font-size: 16px;
-    padding-top: 4px;         /* ajusta alinhamento vertical */
+    padding-top: 4px;         
     font-weight: bold;
   }
 
   textarea {
-    width: 400px;             /* aumenta largura da caixa */
-    height: 150px;            /* aumenta altura da caixa */
-    font-size: 16px;          /* aumenta fonte */
-    resize: vertical;         /* permite redimensionar verticalmente apenas */
+    width: 400px;             
+    height: 150px;            
+    font-size: 16px;          
+    resize: vertical;         
   }
 
 .radio-group {
